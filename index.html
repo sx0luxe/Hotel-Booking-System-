@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <title>ระบบจองห้องพักโรงแรม</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>ระบบจองห้องพักโรงแรม</h2>
+	
+	<form id="bookingForm">
+	<label>ชื่อลูกค้า:</label>
+	<input type="text" id="guestName" required>
+	
+	<label>ประเภทห้องพัก:</label>
+	<select id="roomtype" required>
+	<option value="">--เลือกห้อง--</option>
+	<option value="standard">800฿/คืน</option>
+	<option value="Deluxe">1,500฿/คืน</option>
+	<option value="Suite">2,500฿/คืน</option>
+	</select>
+	
+	<label>วันที่เข้าพัก:</label>
+	<input type="date" id="checkIn" required>
+	
+	<label>วันที่ออก:</label>
+	<input type="date" id="checkOut" required>
+	
+	<button type="submit">จองห้องพัก</button>
+   </form>
+	
+	<h3>รายการจองห้องพัก</h3>
+	<table id="bookingtable">
+	 <thead>
+	   <tr>
+	    <th>ลูกค้า</th>
+		<th>ประเภทห้อง</th>
+		<th>เช็คอิน</th>
+		<th>เช็คเอาท์</th>
+		<th>จำนวนคืน</th>
+		<th>ราคารวม</th>
+		<th>ยกเลิก</th>
+	  </tr>
+	 </thead>
+	<tbody></tbody>
+   </table>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
